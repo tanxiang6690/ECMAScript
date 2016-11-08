@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://es6.ruanyifeng.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./ECMAScript 6入门_files/normalize.css">
+  <link rel="stylesheet" href="./ECMAScript 6入门_files/app.css">
+  <title>ECMAScript 6入门</title>
+  <link rel="shortcut icon" href="http://es6.ruanyifeng.com/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://es6.ruanyifeng.com/favicon.ico" type="image/x-icon">
+  <script src="./ECMAScript 6入门_files/jquery-1.11.0.min.js"></script>
+  <script src="./ECMAScript 6入门_files/jquery-ui.min.js"></script>
+  <script src="./ECMAScript 6入门_files/marked.js"></script>
+  <script src="./ECMAScript 6入门_files/store.js"></script>
+  <script src="./ECMAScript 6入门_files/ditto.js"></script>
+  <script src="./ECMAScript 6入门_files/prism.js"></script>
+<script type="text/javascript" async="" src="http://es6.disqus.com/embed.js"></script></head>
+<body>
+  <!-- essential -->
+  <div id="sidebar"><h1 id="-ecmascript-6-"><a href="http://es6.ruanyifeng.com/">ECMAScript 6 入门</a></h1>
+<p>作者：<a href="http://www.ruanyifeng.com/">阮一峰</a></p>
+<p>授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a></p>
+<form class="searchBox" onsubmit="return searchbar_listener()"><input name="search" type="search"><input type="image" class="searchButton" src="./ECMAScript 6入门_files/magnifier.jpg" alt="Search"></form><h2 id="-">目录</h2>
+<ol start="0">
+<li><a href="http://es6.ruanyifeng.com/#README">前言</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/intro">ECMAScript 6简介</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/let">let和const命令</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/destructuring">变量的解构赋值</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/string">字符串的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/regex">正则的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/number">数值的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/array">数组的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/function">函数的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/object">对象的扩展</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/symbol">Symbol</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/proxy">Proxy和Reflect</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/arraybuffer">二进制数组</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/set-map">Set和Map数据结构</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/iterator">Iterator和for...of循环</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/generator">Generator函数</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/promise">Promise对象</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/async">异步操作和Async函数</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/class">Class</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/decorator">Decorator</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/module">Module</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/style">编程风格</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/spec">读懂规格</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/reference">参考链接</a></li>
+</ol>
+<h2 id="-">其他</h2>
+<ul>
+<li><a href="http://github.com/ruanyf/es6tutorial/">源码</a></li>
+<li><a href="https://github.com/ruanyf/es6tutorial/commits/gh-pages">修订历史</a></li>
+<li><a href="https://github.com/ruanyf/es6tutorial/issues">反馈意见</a></li>
+</ul>
+</div>
+  <div id="content"><h1 id="ecmascript-6-">ECMAScript 6入门</h1>
+<p>《ECMAScript 6入门》是一本开源的JavaScript语言教程，全面介绍ECMAScript 6新引入的语法特性。</p>
+<p><a href="http://es6.ruanyifeng.com/images/cover-2nd.jpg"><img src="./ECMAScript 6入门_files/cover_thumbnail.jpg" alt="cover"></a></p>
+<p>本书覆盖 ES6/ES7 与 ES5 的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。</p>
+<p>本书为中级难度，适合已经掌握 ES5 的读者，用来了解这门语言的最新发展；也可当作参考手册，查寻新增的语法点。</p>
+<p>全书已由电子工业出版社出版，目前是第二版，书名为《ES6 标准入门》。纸版是基于网站内容排版印刷的。</p>
+<p>感谢张春雨编辑支持我将全书开源的做法。如果您认可这本书，建议购买纸版。这样可以使出版社不因出版开源书籍而亏钱，进而鼓励更多的作者开源自己的书籍。</p>
+<ul>
+<li><a href="http://item.jd.com/11849235.html">京东</a></li>
+<li><a href="http://product.dangdang.com/23840431.html">当当</a></li>
+<li><a href="http://www.amazon.cn/ES6-%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8-%E9%98%AE%E4%B8%80%E5%B3%B0/dp/B01A18WWAG/">亚马逊</a></li>
+<li><a href="http://product.china-pub.com/4904712">China-pub</a></li>
+</ul>
+<h3 id="版权许可" class="版权许可">版权许可</h3>
+<p>本书采用“保持署名—非商用”创意共享4.0许可证。</p>
+<p>只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。</p>
+<p>详细的法律条文请参见<a href="http://creativecommons.org/licenses/by-nc/4.0/">创意共享</a>网站。</p>
+<h3 class="留言" id="留言">留言</h3><div id="disqus_thread"></div></div>
+  <!-- optional -->
+  <div id="back_to_top" style="display: block;">back to top</div>
+  <div id="edit" style="display: block;">edit</div>
+  <div id="loading" style="display: none;">Loading ...</div>
+  <div id="error" style="display: none;">Opps! ... File not found!</div>
+  <div id="flip"><div id="pageup" style="display: none;">上一章</div><div id="pagedown" style="display: inline-block;">下一章</div></div>
+  <div class="progress-indicator-2" style="width: 100%;"></div>
+
+  <script src="./ECMAScript 6入门_files/config.js"></script>
+  <script>
+    ditto.run();
+  </script>
+  <noscript>
+    &lt;p&gt;《ECMAScript 6入门》是一本开源的JavaScript语言教程，全面介绍ECMAScript 6新增的语法特性。&lt;/p&gt;
+    &lt;p&gt;本书力争覆盖ES6与ES5的所有不同之处，对涉及的语法知识给予详细介绍，并给出大量简洁易懂的示例代码。&lt;/p&gt;
+    &lt;p&gt;本书为中级难度，适合已有一定JavaScript语言基础的读者，了解这门语言的最新进展；也可当作参考手册，查寻新增的语法点。&lt;/p&gt;
+  </noscript>
+
+
+</body></html>

@@ -1,0 +1,7 @@
+http://es6.ruanyifeng.com/
+
+*javascript权威指南（比较详细）书
+
+*javascript语言精粹（较难）    书
+
+*编码的奥秘（秒）              书
